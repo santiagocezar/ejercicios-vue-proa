@@ -15,10 +15,8 @@ const nombre = ref('')
 .root {
     font-family: "Poppins", sans-serif;
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 input {
     background-color: white;
@@ -26,7 +24,7 @@ input {
     font: inherit;
     outline: none;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid midnightblue;
     box-shadow: 4px 4px 0 lightcoral;
     margin-bottom: 8px;
 }
