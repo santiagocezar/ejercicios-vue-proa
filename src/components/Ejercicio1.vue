@@ -1,36 +1,14 @@
 <script setup lang="ts">
+import Base from './util/Base.vue'
 import { ref } from "vue";
 
 const nombre = ref('')
 </script>
 
 <template>
-    <div class="root">
+    <Base>
+        <h2>Jaja, saludos</h2>
         <input autofocus v-model="nombre" type="text" />
-        <p class="hola">Hola, {{ nombre || '...' }}</p>
-    </div>
+        <p class="big">Hola, {{ nombre || '...' }}</p>
+    </Base>
 </template>
-
-<style scoped>
-.root {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-input {
-    background-color: white;
-    border: none;
-    font: inherit;
-    outline: none;
-    padding: 8px;
-    border: 2px solid midnightblue;
-    box-shadow: 4px 4px 0 lightcoral;
-    margin-bottom: 8px;
-}
-.hola {
-    font-size: 56px;
-    font-weight: 300;
-    text-align: center;
-}
-</style>
